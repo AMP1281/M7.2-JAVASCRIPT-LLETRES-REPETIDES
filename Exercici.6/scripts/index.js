@@ -1,43 +1,45 @@
 //Exercici.1
 
     //Array
-    var lletres=["A", "N", "N", "A"];
+    var lletres1=["A", "N", "N", "A"];
 
-    //Bucle    
-        for(var i=0;i<lletres.length; i++) {
-            console.log(lletres[i]);
+    //Function exercici6
+    function exercici1() {
+        for(var i=0;i<lletres1.length; i++) {
+            console.log(lletres1[i]);
         }
+    }
 
 //Exercici.2
 
     //Array
-    var lletres=["A", "N", "3", "N", "A"];
+    var lletres2=["A", "N", "3", "N", "A"];
 
     //Bucle
-    for (var i=0;i<lletres.length; i++) {
+    for (var i=0;i<lletres2.length; i++) {
 
-        if (lletres[i] =="A" || lletres[i] =="E" || lletres[i] =="I" || lletres[i] =="O" || lletres[i] =="U") {
-        console.log("He trobat la vocal:" + lletres [i]);
+        if (lletres2[i] =="A" || lletres2[i] =="E" || lletres2[i] =="I" || lletres2[i] =="O" || lletres2[i] =="U") {
+        console.log("He trobat la vocal:" + lletres2 [i]);
         }
 
-        else if (isNaN(lletres[i]) == false) {
-            console.log("Els noms de persones no contenen el número:" + lletres [i]);
+        else if (isNaN(lletres2[i]) == false) {
+            console.log("Els noms de persones no contenen el número:" + lletres2 [i]);
             }
 
         else{
-            console.log("He trobat la consonant:" + lletres [i]);
+            console.log("He trobat la consonant:" + lletres2 [i]);
         }
     }
 
 //Exercici.3
 
     //Array
-    var lletres = ["A", "N", "N", "A"];
+    var lletres3 = ["A", "N", "N", "A"];
 
 
     //reduce()
-    var numlletres = lletres.reduce(function(contadorLletres, lletres){
-    contadorLletres[lletres] = (contadorLletres[lletres] || 0) + 1;
+    var numlletres = lletres3.reduce(function(contadorLletres, lletres3){
+    contadorLletres[lletres3] = (contadorLletres[lletres3] || 0) + 1;
     return contadorLletres;
     }, {})
 
