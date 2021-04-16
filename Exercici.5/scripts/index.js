@@ -7,6 +7,14 @@ console.log
 
     console.log(result);
 
-   
+    var filtered = result.filter(function(value, index, arr) {
+        return value == "nombre-de-usuario@ionos.es";
+    });
+    
 
+    //var eliminar = result.filter((item,index){
+    //    return result.indexOf(item) === index;
+    //});
+
+    //console.log(eliminar);
 

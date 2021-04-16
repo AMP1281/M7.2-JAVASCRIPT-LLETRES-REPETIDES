@@ -10,3 +10,4 @@ return contadorLletres;
 }, {})
 
 console.log(numlletres);
+
