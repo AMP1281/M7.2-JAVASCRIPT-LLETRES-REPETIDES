@@ -3,7 +3,7 @@
     //Array
     var lletres1=["A", "N", "N", "A"];
 
-    //Function exercici final
+    //Function + Bucle For
     function exercici1() {
         for(var i=0;i<lletres1.length; i++) {
             console.log(lletres1[i]);
@@ -15,21 +15,21 @@
     //Array
     var lletres2=["A", "N", "3", "N", "A"];
 
-    //Function exercici final
+    //Function + Bucle
     function exercici2(){
         
         for (var i=0;i<lletres2.length; i++) {
 
             if (lletres2[i] =="A" || lletres2[i] =="E" || lletres2[i] =="I" || lletres2[i] =="O" || lletres2[i] =="U") {
-            console.log("He trobat la vocal:" + lletres2 [i]);
+            console.log("He trobat la vocal: " + lletres2 [i]);
             }
 
             else if (isNaN(lletres2[i]) == false) {
-                console.log("Els noms de persones no contenen el número:" + lletres2 [i]);
+                console.log("Els noms de persones no contenen el número: " + lletres2 [i]);
                 }
 
             else{
-                console.log("He trobat la consonant:" + lletres2 [i]);
+                console.log("He trobat la consonant: " + lletres2 [i]);
             }
         }
     }
