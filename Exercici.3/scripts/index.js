@@ -1,13 +1,18 @@
 
-//Array
+Array//
     var lletres = ["A", "N", "N", "A"];
 
+    var numlletres = new Map ();
 
-//reduce()
-    var numlletres = lletres.reduce(function(contadorLletres, lletres){
-    contadorLletres[lletres] = (contadorLletres[lletres] || 0) + 1;
-    return contadorLletres;
-    }, {})
+    lletres.forEach((letra) => {
+        var count = 0;
+        for (var el of lletres){
+            if (el == letra){
+                count ++;
+                numlletres.set(el,count);
+            }
+        }
+    });
 
     console.log(numlletres);
 

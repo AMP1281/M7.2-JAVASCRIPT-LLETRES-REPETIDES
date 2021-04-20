@@ -41,10 +41,19 @@
 
     //Function exercici final
     function exercici3(){
-        var numlletres = lletres3.reduce(function(contadorLletres, lletres3){
-        contadorLletres[lletres3] = (contadorLletres[lletres3] || 0) + 1;
-        return contadorLletres;
-        }, {})
+
+        var numlletres = new Map ();
+
+        lletres3.forEach((letra) => {
+        var count = 0;
+        for (var el of lletres3){
+            if (el == letra){
+                count ++;
+                numlletres.set(el,count);
+            }
+        }
+        });
+
         console.log(numlletres);
     }
 
